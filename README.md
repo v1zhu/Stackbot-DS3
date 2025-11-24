@@ -19,7 +19,6 @@
      question columns, we kept only alphabetic words, removed stopwords except for negations, and lemmatized all words. 
      Finally, we combined the title and question columns and saved the dataframe.
 
-
      In tf-idf-matrix.ipynb, we created and saved both the idf dictionary and tf-idf matrix. First, we read in the saved 
      dataframe, which had some null values in the question column. These seemed to be caused by saving to a CSV. We decided just
      to drop these because it was a relatively small number of columns (around 600 out of a million). Next, we created the idf 
