@@ -11,6 +11,7 @@ The other files mainly serve to create the necessary information for the chatbot
      2. Alternatively, download the file at https://drive.google.com/drive/u/3/folders/1_JEK_GU4MpafPtzUHgvVThDi9ivsm4kS, to skip running data_exploration.ipynb, which takes around 20-30 minutes
 4. Run all cells in tf-idf.ipynb
 5. Using chatbot.ipynb you can call the chatbot_reply() or other 2 functions with your question
+6. (optional) For hosting with `streamlit` follow [here](https://github.com/ICharmU/gdp-dashboard)
 # Methods Used  
 In data_exploration.ipynb, we cleaned the data and prepared it for vectorization. First, we merged the downloaded csv files
 to create question and answer pairs. For the answer column, we cleaned HTML tags to make it more readable. For the question
@@ -34,7 +35,6 @@ each function only adds additional filter options. As such, I will only discuss 
 function, we first compute the tf-idf values for the user query, and convert it to a SKlearn sparse matrix. We then 
 compute the cosine similarity between the input and every vectorized question in the dataframe. We take the max value and
 return the highest rated corresponding answer, along with the similarity score and question.
-# Webpage Setup
 
 
 
