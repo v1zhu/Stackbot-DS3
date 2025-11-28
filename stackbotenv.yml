@@ -2,9 +2,11 @@ name: text-analysis-env
 channels:
   - conda-forge
   - defaults
-
+#check this is correct
 dependencies:
   - python=3.10
+  - google-genai
+  - python-dotenv
   - ipykernel
   - pandas
   - numpy
