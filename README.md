@@ -34,7 +34,6 @@ In chatbot.ipynb we created three functions to query the dataframe based on a us
 each function only adds additional filter options. As such, I will only discuss the function chatbot_reply here. In this 
 function, we first compute the tf-idf values for the user query, and convert it to a SKlearn sparse matrix. We then 
 compute the cosine similarity between the input and every vectorized question in the dataframe. We take the max value and
-return the highest rated corresponding answer, along with the similarity score and question. In addition to this, we created  
-a function to use our retrived answers and gemini api to answer the user question. This prompts gemini to use the retrived relevant answers and if there are none to respond with "I don't know".
+return the highest rated corresponding answer, along with the similarity score and question. In addition to this, we created a function to use our retrived answers and gemini api to answer the user question. This prompts gemini to use the retrived relevant answers and if there are none to respond with "I don't know".
 
 
