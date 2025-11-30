@@ -11,7 +11,8 @@ The other files mainly serve to create the necessary information for the chatbot
      2. Alternatively, download the file at https://drive.google.com/drive/u/3/folders/1_JEK_GU4MpafPtzUHgvVThDi9ivsm4kS, to skip running data_exploration.ipynb, which takes around 20-30 minutes
 4. Run all cells in tf-idf.ipynb
 5. Using chatbot.ipynb you can call the chatbot_reply() or other 2 functions with your question
-6. (optional) For hosting with `streamlit` follow [here](https://github.com/ICharmU/gdp-dashboard)
+6. If you want to use get_gemini_response() create a gemini api key [here](https://aistudio.google.com/u/1/api-keys). Then, create a .env file with api_key=your_key_here.
+7. (optional) For hosting with `streamlit` follow [here](https://github.com/ICharmU/gdp-dashboard)
 # Methods Used  
 In data_exploration.ipynb, we cleaned the data and prepared it for vectorization. First, we merged the downloaded csv files
 to create question and answer pairs. For the answer column, we cleaned HTML tags to make it more readable. For the question
